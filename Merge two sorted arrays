@@ -1,0 +1,163 @@
+#include<stdio.h>
+main()
+{
+int A[50], B[50];
+int i,j,k=0, m, n;
+  int C[100];
+          printf("\n Enter size of array Array 1: ");
+
+        scanf("%d", &m);
+
+
+
+        printf("\n Enter sorted elements of array 1: \n");
+
+        for (i = 0; i < m; i++)
+
+        {
+
+            scanf("%d", &A[i]);
+
+        }
+                printf("\n Enter size of array 2: ");
+
+        scanf("%d", &n);
+
+
+
+        printf("\n Enter sorted elements of array 2: \n");
+
+        for (j = 0; j < n; j++)
+
+        {
+
+            scanf("%d", &B[j]);
+
+        }
+
+        i=0;
+        j=0;
+
+
+ while(i<m && j<n)
+ {
+  if(A[i]<B[j])
+  {
+   C[k]= A[i];
+   i++;
+  }
+  else
+    {
+     C[k]=B[j];
+     j++;
+    }
+  k++;
+ }
+
+ while(i<m)
+ {
+  C[k]=A[i];
+  i++;
+  k++;
+ }
+ while(j<n)
+ {
+ C[k]=B[j];
+ j++;
+ k++;
+ }
+         printf("\n After merging: \n");
+
+        for (i = 0; i < m + n; i++)
+
+        {
+
+            printf("\n%d", C[i]);
+
+        }
+
+
+
+
+}#include<stdio.h>
+main()
+{
+int A[50], B[50];
+int i,j,k=0, m, n;
+  int C[100];
+          printf("\n Enter size of array Array 1: ");
+
+        scanf("%d", &m);
+
+
+
+        printf("\n Enter sorted elements of array 1: \n");
+
+        for (i = 0; i < m; i++)
+
+        {
+
+            scanf("%d", &A[i]);
+
+        }
+                printf("\n Enter size of array 2: ");
+
+        scanf("%d", &n);
+
+
+
+        printf("\n Enter sorted elements of array 2: \n");
+
+        for (j = 0; j < n; j++)
+
+        {
+
+            scanf("%d", &B[j]);
+
+        }
+
+        i=0;
+        j=0;
+
+
+ while(i<m && j<n)
+ {
+  if(A[i]<B[j])
+  {
+   C[k]= A[i];
+   i++;
+  }
+  else
+    {
+     C[k]=B[j];
+     j++;
+    }
+  k++;
+ }
+
+ while(i<m)
+ {
+  C[k]=A[i];
+  i++;
+  k++;
+ }
+ while(j<n)
+ {
+ C[k]=B[j];
+ j++;
+ k++;
+ }
+         printf("\n After merging: \n");
+
+        for (i = 0; i < m + n; i++)
+
+        {
+
+            printf("\n%d", C[i]);
+
+        }
+
+
+
+
+}
